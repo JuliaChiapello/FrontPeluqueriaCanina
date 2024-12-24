@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Canina - Glam Dogs</title>
+    <link rel="shortcut icon" href="./imagenes/icon.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-200 shadow-md sticky top-0 z-50 h-16">
+        <div class="container mx-auto flex items-center justify-between p-3">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="./imagenes/icon.jpg" alt="Logo" class="w-10 h-10">
+                <h1 class="text-3xl font-bold text-blue-800">Glam Dogs</h1>
+            </div>
+
+            <!-- Barra Nav -->
+            <nav class="hidden md:flex space-x-6 mx-2 relative">
+                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transform hover:scale-125 transition">Servicios</a>
+                <a href="#blog" class="text-gray-600 hover:text-blue-500 transform hover:scale-125 transition">Blog</a>
+                <a href="#sobrenosotros" class="text-gray-600 hover:text-blue-500 transform hover:scale-125 transition">Sobre Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-500 transform hover:scale-125 transition">Contacto</a>
+            </nav>
+
+            <!-- Boton Call to Action -->
+            <div class="hidden md:flex">
+                <a href="#contacto" class="bg-blue-400 text-xl text-white text-center px-4 py-2 rounded-md shadow hover:bg-blue-600 transform hover:scale-105 transition">Reserva tu cita</a>
+            </div>
+
+            <!-- Boton Menu para Mobile -->
+            <button id="menu-boton" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 17 14">
+                    <path d="M16 2H1a1 1 0 0 1 0-2h15a1 1 0 1 1 0 2Zm0 6H1a1 1 0 0 1 0-2h15a1 1 0 1 1 0 2Zm0 6H1a1 1 0 0 1 0-2h15a1 1 0 0 1 0 2Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu para Mobile -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-md hidden">
+            <nav class="flex flex-col items-center space-y-4 p-4">
+                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transform hover:scale-105 transition">Servicios</a>
+                <a href="#blog" class="text-gray-600 hover:text-blue-500 transform hover:scale-105 transition">Blog</a>
+                <a href="#sobrenosotros" class="text-gray-600 hover:text-blue-500 transform hover:scale-105 transition">Sobre Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-500 transform hover:scale-105 transition">Contacto</a>
+                <a href="#contacto" class="bg-blue-400 text-lg text-white px-4 py-2 rounded-md shadow hover:bg-blue-600 transform hover:scale-105 transition">Reserva tu cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Imagen con Transparencia y animacion basica -->
+    <section class="relative">
+        <img src="./imagenes/imagen-header/dog1.jpg" alt="perrito" class="w-full h-auto object-cover opacity-0 animate-fade-in">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+            <h2 class="p-6 text-white text-4xl opacity-0 animate-slide-in">¡El cuidado perfecto para tu mejor amigo!</h2>
+            <p class="p-6 text-white text-base font-bold opacity-0 animate-slide-in">
+                No solo nos dedicamos a embellecer a tus fieles compañeros, sino que también les brindamos el amor y el cuidado que se merecen. 
+                Sabemos lo importante que es para vos que tu perro esté feliz y sano, por eso los tratamos como si fueran parte de 
+                nuestra propia familia.<br>
+                ¡Vení a visitarnos y dejá que tu perro se deleite con una experiencia de peluquería única, llena de amor y atención especializada!
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobrenosotros" class="py-16 bg-gray-400">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Sobre Nosotros</h2>
+            <p class="text-white text-xl leading-relaxed max-w-3xl mx-auto p-6">
+                En <strong>Glam Dogs</strong>, nos dedicamos a ofrecer servicios de calidad para el cuidado y bienestar de tus mascotas.
+                Con más de 10 años de experiencia, nuestro equipo de profesionales está comprometido con brindar una atención personalizada y
+                un trato amoroso a cada cliente peludo. Creemos que cada mascota merece lo mejor, y trabajamos con pasión para asegurar que
+                tu mejor amigo reciba el cuidado que merece.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nuestros servicios -->
+    <section id="servicios" class="py-16 bg-gray-300">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-green-200 shadow-md rounded-lg p-6 transform hover:scale-125 transition">
+                    <img src="./imagenes/servicios/corte1.png" alt="Corte sanitario" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Corte Sanitario</h3>
+                    <p class="text-black p-6">Mantén a tu mascota limpia y libre de suciedad con nuestro servicio especializado de corte sanitario.</p>
+                </div>
+                <div class="bg-blue-200 shadow-md rounded-lg p-6 transform hover:scale-125 transition">
+                    <img src="./imagenes/servicios/unas.png" alt="Corte de uñas" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Corte de Uñas</h3>
+                    <p class="text-black p-6">Cuidado profesional para mantener las uñas de tu mascota en perfecto estado y prevenir molestias.</p>
+                </div>
+                <div class="bg-yellow-200 shadow-md rounded-lg p-6 transform hover:scale-125 transition">
+                    <img src="./imagenes/servicios/corte2.png" alt="Cortes específicos" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Cortes Específicos</h3>
+                    <p class="text-black p-6">Dale a tu mascota un estilo único con cortes personalizados según su raza y preferencias.</p>
+                </div>
+                <div class="bg-pink-200 shadow-md rounded-lg p-6 transform hover:scale-125 transition">
+                    <img src="./imagenes/servicios/banos.png" alt="Baños" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Baños</h3>
+                    <p class="text-black p-6">Baños completos con productos de alta calidad para un pelaje limpio, brillante y saludable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-red-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Blog</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="#patitas">
+                    <div class="bg-pink-300 shadow-md rounded-lg p-6">
+                        <img src="./imagenes/imagenes-blog/Patita.jpeg" alt="Cuidar las patitas" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-bold mb-2">Cómo cuidar las patitas de tu perro</h3>
+                        <p class="text-gray-900">Aprende consejos prácticos para proteger las patas de tu perro de lesiones y condiciones climáticas extremas.</p>
+                    </div>
+                </a>   
+                <a href="#perro-solo">
+                    <div class="bg-yellow-200 shadow-md rounded-lg p-6">
+                        <img src="./imagenes/imagenes-blog/triste.jpg" alt="Dejar solo al perro" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-bold mb-2">¿Cuánto tiempo puedes dejar solo a tu perro?</h3>
+                        <p class="text-gray-900">Descubre cuánto tiempo es seguro dejar a tu mascota sola en casa y cómo prepararlo para ello.</p>
+                    </div>
+                </a>
+                <a href="#perro-asustado">    
+                    <div class="bg-indigo-200 shadow-md rounded-lg p-6">
+                        <img src="./imagenes/imagenes-blog/enojado.jpg" alt="Calmar a un perro asustado" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-bold mb-2">3 métodos para tranquilizar a un perro asustado</h3>
+                        <p class="text-gray-900">Estrategias efectivas para ayudar a tu perro a sentirse más tranquilo en situaciones estresantes.</p>
+                    </div>
+                </a>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Informacion de Blog 1 -->
+    <section id="patitas" class="py-16 bg-pink-300">
+        <div class="container mx-auto bg-pink-300">
+            <h2 class="text-3xl font-bold mb-8 text-center">Como cuidar las patitas de tu perro</h2>
+            <div class="flex flex-col items-center justify-center">
+                <img src="./imagenes/imagenes-info-blog/perro4.jpg" alt="perro" class="rounded-lg">
+            </div>
+            <p class="text-black text-xl leading-relaxed max-w-3xl mx-auto p-6">
+                Protege las patitas de tu perro 🐾
+                Las patitas son clave para su bienestar.<br> Sigue estos tips esenciales:<br>
+                <strong>Hidratación:</strong> Usa cremas específicas para prevenir grietas.<br>
+                <strong>Limpieza:</strong> Lava con agua tibia y seca bien después de cada paseo.<br>
+                <strong>Superficies seguras:</strong> Evita el asfalto caliente o superficies heladas.<br>
+                <strong>Corte de uñas:</strong> Mantén sus uñas en una longitud adecuada.<br>
+                <strong>Revisiones frecuentes:</strong> Verifica cortes, espinas o heridas pequeñas.<br>
+                ¡Cuida sus patitas para que siempre esté feliz y activo! 💖
+            </p>
+        </div>
+    </section>
+
+    <!-- Informacion de Blog 2 -->
+    <section id="perro-solo" class="py-16 bg-yellow-200">
+        <div class="container mx-auto bg-yellow-200">
+            <h2 class="text-3xl font-bold mb-8 text-center">¿Cuánto tiempo puedes dejar solo a tu perro?</h2>
+            <div class="flex flex-col items-center justify-center">
+                <img src="./imagenes/imagenes-info-blog/perro2.jpg" alt="perro" class="rounded-lg">
+            </div>
+            <p class="text-black text-xl leading-relaxed max-w-3xl mx-auto p-6">
+                El tiempo que un perro puede quedarse solo depende de su edad, tamaño y personalidad:<br>
+                <strong>Cachorros:</strong> Máximo 2-3 horas (necesitan atención frecuente).<br>
+                <strong>Adultos:</strong> De 4 a 6 horas es ideal; hasta 8 horas como límite en casos excepcionales.<br>
+                <strong>Perros mayores:</strong> Similar a los adultos, pero pueden necesitar más compañía debido a problemas de salud.<br>
+                Asegúrate de dejarle agua, juguetes y un espacio cómodo. ¡Y no olvides darle mucho cariño al volver! 🐕❤️
+            </p>
+        </div>
+    </section>
+
+    <!-- Informacion Blog 3-->
+    <section id="perro-asustado" class="py-16 bg-green-200">
+        <div class="container mx-auto bg-green-200">
+            <h2 class="text-3xl font-bold mb-8 text-center">3 métodos para tranquilizar a un perro asustado</h2>
+            <div class="flex flex-col items-center justify-center">
+                <img src="./imagenes/imagenes-info-blog/perro3.jpg" alt="perro" class="rounded-lg">
+            </div>
+            <div class="flex flex-col items-center justify-center text-black text-xl leading-relaxed max-w-xl mx-auto p-6">
+                <p>
+                    Aquí tienes tres métodos efectivos para tranquilizar a un perro asustado:
+                </p>
+                <p><strong>Ambiente seguro:</strong></p>
+                <ol>
+                    <li>Llévalo a un lugar tranquilo y alejado del estímulo que lo asusta.</li>
+                    <li>Usa su manta o cama favorita para brindarle confort.</li>
+                </ol>
+                <p><strong>Técnicas de calma:</strong></p>
+                <ol>
+                    <li>Habla con voz suave y tranquila.</li>
+                    <li>Evita acariciarlo demasiado si está muy alterado, ya que podría reforzar su miedo.</li>
+                </ol>
+                <p><strong>Distracción positiva:</strong></p>
+                <ol>
+                    <li>Dale un juguete interactivo o su premio favorito.</li>
+                    <li>Usa juegos suaves para redirigir su atención y reducir la ansiedad.</li>
+                </ol>
+                <br>
+                <p>La paciencia y la empatía son clave. ¡Con tiempo y cariño, se sentirá seguro! 🐾💖</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reservar Cita (Formulario)-->
+    <section id="contacto" class="py-16 bg-gray-300">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Reserva tu Cita</h2>
+            <form class="bg-green-200 shadow-md rounded-lg p-6 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-left text-gray-700 font-bold mb-2">Nombre Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required  minlength="3" maxlength="40" pattern="[A-Za-z0-9\s]+" title="Sólo letras y números. Tamaño: 3 - 40"  class="p-2 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left text-gray-700 font-bold mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" title="Email inválido" class="p-2 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-left text-gray-700 font-bold mb-2">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ingrese su número de teléfono" required class="p-2 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="block text-left text-gray-700 font-bold mb-2">Fecha de la Cita</label>
+                    <input type="date" id="date" name="date" required class="p-2 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="service" class="block text-left text-gray-700 font-bold mb-2">Servicio</label>
+                    <select id="service" name="service" class="p-2 w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        <option value="corte">Corte Sanitario</option>
+                        <option value="uñas">Corte de Uñas</option>
+                        <option value="estilo">Cortes Específicos</option>
+                        <option value="baño">Baños</option>
+                        <option value="baño">Otros</option>
+                    </select>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow hover:bg-blue-600 transition">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-100 py-8">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">Dirección: San Martin 677, Ciudad de Córdoba, Argentina</p>
+            <p class="mb-4">Teléfono: +54 351 676 7239</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.facebook.com" target="_blank" class="text-blue-500 hover:text-blue-400"><img src="./imagenes/redes-sociales/facebook.png" alt="Facebook" class="w-10 h-10 transform hover:scale-125 transition"></a>
+                <a href="https://www.instagram.com" target="_blank" class="text-blue-500 hover:text-blue-400"><img src="./imagenes/redes-sociales/instagram.png" alt="Instagram" class="w-10 h-10 transform hover:scale-125 transition"></a>
+                <a href="https://www.x.com" target="_blank" class="text-blue-500 hover:text-blue-400"><img src="./imagenes/redes-sociales/red x.png" alt="Red x" class="w-10 h-10 transform hover:scale-125 transition"></a>
+                <a href="https://wa.me/+543516767239" target="_blank" class="text-green-500 hover:text-green-400"><img src="./imagenes/redes-sociales/whatsapp.png" alt="Whatsapp" class="w-10 h-10 transform hover:scale-125 transition"></a>
+            </div>
+            <p>&copy; 2024 Peluquería Canina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
